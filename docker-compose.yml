@@ -7,8 +7,12 @@ services:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
+    container_name: graphql_db
     environment:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: "graphql"
+      MYSQL_USER: "admin"
+      MYSQL_PASSWORD: "password"
+      MYSQL_ROOT_PASSWORD: "root"
 
   adminer:
     image: adminer
