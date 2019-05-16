@@ -1,5 +1,6 @@
 type Query {
     pets: [Pet]
+    cars: [Car]
 }
 
 type Pet {
@@ -14,4 +15,11 @@ enum Animal {
     CAT
     BADGER
     MAMMOTH
+}
+
+type Car {
+    id: Int
+    make: String
+    model: String
+    year: Int
 }
