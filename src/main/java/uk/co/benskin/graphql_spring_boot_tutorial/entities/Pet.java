@@ -18,5 +18,6 @@ public class Pet {
     @Enumerated(EnumType.STRING)
     private Animal type;
 
+
     private int age;
 }
